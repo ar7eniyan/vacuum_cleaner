@@ -6,7 +6,7 @@
     <xacro:property name="wheel_width"  value="0.025"/>
     <xacro:property name="wheelbase"    value="0.250"/>
     <xacro:property name="wheel_xoff"   value="-0.050"/>
-    <xacro:property name="wheel_zoff"   value="0.000"/>
+    <xacro:property name="floor_gap"    value="0.020"/>
 
     <xacro:include filename="robot_core.xacro"/>
 </robot>

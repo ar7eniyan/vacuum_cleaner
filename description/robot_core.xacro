@@ -28,7 +28,7 @@
   <joint name="${prefix}_joint" type="continuous">
     <parent link="base_link"/>
     <child link="${prefix}_link"/>
-    <origin xyz="${wheel_xoff} ${y_reflect*(wheelbase/2)} ${-wheel_zoff}" rpy="0 0 0"/>
+    <origin xyz="${wheel_xoff} ${y_reflect*(wheelbase/2)} ${wheel_radius - base_height/2 + floor_gap}" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
   </joint>
 </xacro:macro>
