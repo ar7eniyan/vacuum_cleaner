@@ -1,7 +1,12 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+<robot name="vacuum_cleaner" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:property name="base_raduis"  value="0.175"/>
+    <xacro:property name="base_height"  value="0.100"/>
+    <xacro:property name="wheel_radius" value="0.035"/>
+    <xacro:property name="wheel_width"  value="0.025"/>
+    <xacro:property name="wheelbase"    value="0.250"/>
+    <xacro:property name="wheel_xoff"   value="-0.050"/>
+    <xacro:property name="wheel_zoff"   value="0.000"/>
 
-    <xacro:include filename="robot_core.xacro" />
-    
-
+    <xacro:include filename="robot_core.xacro"/>
 </robot>
